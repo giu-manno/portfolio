@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.3766d1b9.css",
+    "main.js": "/portfolio/static/js/main.d487272c.js",
+    "static/js/633.0db642ef.chunk.js": "/portfolio/static/js/633.0db642ef.chunk.js",
+    "static/media/wireframes.jpg": "/portfolio/static/media/wireframes.cc770a9ca282ae2edbf5.jpg",
+    "static/media/ufscLogo.svg": "/portfolio/static/media/ufscLogo.3b68512dc7dfe664b125436449cf6623.svg",
+    "static/media/overview.jpg": "/portfolio/static/media/overview.e59438a565790151df0b.jpg",
+    "static/media/introduction.jpg": "/portfolio/static/media/introduction.fdeb320834d47503ed8c.jpg",
+    "static/media/adesThumbnail.jpg": "/portfolio/static/media/adesThumbnail.bf494361288b0e0457c2.jpg",
+    "static/media/profile.jpeg": "/portfolio/static/media/profile.09fb98d6dc235491a06b.jpeg",
+    "static/media/tests4.jpg": "/portfolio/static/media/tests4.d328d5569611f064cf82.jpg",
+    "static/media/about.png": "/portfolio/static/media/about.82f96c73a291acb7e6e2.png",
+    "static/media/tests5.jpg": "/portfolio/static/media/tests5.271562c6d0e75f479d93.jpg",
+    "static/media/s4eThumbnail.jpg": "/portfolio/static/media/s4eThumbnail.c81a2cf364c32b1f771a.jpg",
+    "static/media/mapping.svg": "/portfolio/static/media/mapping.c12eea7fa8c8c63d7253d4c2c3c01847.svg",
+    "static/media/tests3.jpg": "/portfolio/static/media/tests3.727b90704597ea80d0f2.jpg",
+    "static/media/tests2.jpg": "/portfolio/static/media/tests2.272d97afe3fc47ec572d.jpg",
+    "static/media/technovationLogo.svg": "/portfolio/static/media/technovationLogo.b344b00da96ab04b52abb7120a7d2f6e.svg",
+    "static/media/equipeDigitalLogo.svg": "/portfolio/static/media/equipeDigitalLogo.443b1cf3e00ef1eb770443c2669ee3e4.svg",
+    "static/media/sidiLogo.svg": "/portfolio/static/media/sidiLogo.a52cecbffaf54b145ec4613e6c1009d6.svg",
+    "static/media/norusLogo.svg": "/portfolio/static/media/norusLogo.d2488549992909a470f77d0fde31b525.svg",
+    "static/media/labsecLogo.svg": "/portfolio/static/media/labsecLogo.871e3d44a052f886bea2023d0596817a.svg",
+    "static/media/agileLogo.svg": "/portfolio/static/media/agileLogo.1286eb357def7ddcccff2bc0a83b0439.svg",
+    "static/media/figmaLogo.svg": "/portfolio/static/media/figmaLogo.389c53241fe7ca62a96af25fb457f509.svg",
+    "index.html": "/portfolio/index.html",
+    "main.3766d1b9.css.map": "/portfolio/static/css/main.3766d1b9.css.map",
+    "main.d487272c.js.map": "/portfolio/static/js/main.d487272c.js.map",
+    "633.0db642ef.chunk.js.map": "/portfolio/static/js/633.0db642ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3766d1b9.css",
+    "static/js/main.d487272c.js"
+  ]
+}
