@@ -8,10 +8,10 @@ export default function Header() {
     const location = useLocation();
     const navigate = useNavigate();
 
-    const [backButton, setBackButton] = useState(location.pathname !== '/portfolio');
+    const [backButton, setBackButton] = useState(location.pathname !== '/portfolio' || location.pathname !== '/portfolio/');
 
     const handleHomeButton = () => {
-        if (location.pathname !== '/portfolio') {
+        if (location.pathname !== '/portfolio' || location.pathname !== '/portfolio/') {
             navigate('/portfolio');
             window.scrollTo(0, 0);
         } 
@@ -29,14 +29,14 @@ export default function Header() {
                 </Offcanvas.Header>
 
                 <Offcanvas.Body>
-                    <Nav className={`bg-body scroll-shadow rounded-5 ${(location.pathname !== '/portfolio' && 'back-button') || ''}`}>
-                        <Nav.Link className="d-flex flex-row" href={(location.pathname === '/portfolio' && '#home') || ''} onClick={handleHomeButton}>
+                    <Nav className={`bg-body scroll-shadow rounded-5 ${((location.pathname !== '/portfolio' || location.pathname !== '/portfolio/') && 'back-button') || ''}`}>
+                        <Nav.Link className="d-flex flex-row" href={((location.pathname === '/portfolio' || location.pathname === '/portfolio/') && '#home') || ''} onClick={handleHomeButton}>
                             <Collapse in={backButton} dimension='width'>
                                 <p>&lt; back to&nbsp;</p>
                             </Collapse>
                             <p>home</p>
                         </Nav.Link>
-                        <Collapse timeout={600} in={location.pathname === '/portfolio'} onExited={() => setBackButton(true)} onEnter={() => setBackButton(false)} dimension="width">
+                        <Collapse timeout={600} in={location.pathname === '/portfolio' || location.pathname === '/portfolio/'} onExited={() => setBackButton(true)} onEnter={() => setBackButton(false)} dimension="width">
                             <div>
                                 <Navbar.Text className="d-none d-xl-inline-block">•</Navbar.Text>
                                 <Nav.Link href="#about">about me</Nav.Link>
