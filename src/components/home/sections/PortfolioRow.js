@@ -24,7 +24,7 @@ export default function PortfolioRow() {
                     subtitle="LabSEC"
                     year="2023"
                     badges={["Design System", "Wireframes", "Prototypes", "Benchmarking", "Usability Tests"]}
-                    url={'/giulia-portfolio/labsec'} />
+                    url={'/portfolio/labsec'} />
 
                 <Col>
                     {/* <Row className="gap-4 mb-4">
@@ -56,7 +56,7 @@ export default function PortfolioRow() {
                             subtitle="Norus"
                             year="2024"
                             badges={["Design System", "Enterprise UX", "B2B", "Prototypes", "Product Design"]}
-                            url={'/giulia-portfolio/norus'} />
+                            url={'/portfolio/norus'} />
                     </Row>
                 </Col>
             </Row>
