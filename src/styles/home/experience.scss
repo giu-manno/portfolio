@@ -1,0 +1,49 @@
+.experience-list {
+    .list-group-item > img {
+        transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .list-group-item b {
+        transition: transform 0.2s ease;
+        transform-origin: bottom left;
+    }
+
+    .list-group-item:hover {
+        img {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0.125rem 0.45rem rgba(0, 0, 0, 0.075)) !important;
+        }
+
+        b {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.skill-card {
+    img {
+        transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1) rotate(-8deg);
+            filter: drop-shadow(0 0.125rem 0.45rem rgba(0, 0, 0, 0.075)) !important;
+        }
+    }
+}
+
+.skill-list {
+    b {
+        cursor: default;
+        transition: padding 0.1s ease;
+        transform-origin: bottom left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    b:hover {
+        padding-left: 1rem;
+    }
+}

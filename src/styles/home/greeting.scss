@@ -1,0 +1,63 @@
+.greeting-header {
+    position: absolute;
+    top: -10%;
+    left: 10px;
+}
+
+.greeting-panel {
+    padding: 3rem !important;
+    padding-top: 5rem !important;
+    position: relative;
+}
+
+.contact-link {
+    & .arrow {
+        display: inline-flex;
+        justify-content: center;
+        transition: padding 0.5s ease-out;
+    }
+
+    &:hover {
+        .arrow {
+            padding-left: .2em;
+        }
+    }
+}
+
+.profile-picture {
+    aspect-ratio: 1/1;
+    background-image: url('../../resources/img/home/profile.jpeg');
+    background-size: 135%;
+    background-position: 75% 50%;
+    position: relative;
+
+    .circular-text {
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 10rem;
+        animation: rotate 25s linear infinite;
+        transform-origin: 50% 50%;
+        filter: invert(1) grayscale(1) contrast(9);
+        mix-blend-mode: difference;
+
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+    }
+
+    @keyframes rotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+      
+    .textcircle {
+        transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+        transform-origin: 50% 50%;
+    }
+      
+    svg:hover .textcircle {
+        transform: rotate(90deg);
+    }
+}

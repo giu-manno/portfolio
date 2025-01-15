@@ -1,0 +1,22 @@
+.fade-borders {
+    mask-image: linear-gradient(to left, #000 95%, transparent), linear-gradient(to right, #000 95%, transparent);
+    mask-composite: intersect;
+
+    .flickity-page-dots {
+        position: relative;
+        bottom: 0;
+        padding-top: 1rem;
+    }
+}
+
+.testimonial {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+    margin-right: 1.5rem;
+
+    p + p {
+        margin-top: 1rem;
+    }
+}

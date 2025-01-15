@@ -1,0 +1,54 @@
+@media only screen and (min-width: 1200px) {
+    .navbar-nav {
+        font-size: 1.5rem !important;
+        padding: 0.25rem calc(1.5rem + 8px) !important;
+
+        transition: margin .7s ease, width .7s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: calc(50% - (1095px / 2));
+        margin-right: calc(50% - (1095px / 2));
+        text-wrap: nowrap;
+        white-space: nowrap;
+
+        .navbar-text {
+            padding: 0 3.5rem !important;
+        }
+
+        .nav-link {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+
+            transition: padding .7s ease;
+        }
+
+        &.back-button {
+            margin-left: 5rem;
+        }
+    }
+
+    @supports (animation-timeline: scroll()) {
+        .scroll-shadow {
+            animation: scroll-shadow linear both;
+            animation-timeline: scroll();
+            animation-range: 0ex 5ex;
+
+            background-color: var(--bs-body-bg);
+        }
+
+        @keyframes scroll-shadow {
+            from {
+                box-shadow: none;
+            }
+
+            to {
+                box-shadow: var(--bs-box-shadow-sm);
+            }
+        }
+    }
+}
+
+.nav-link, .navbar-text {
+    display: inline-block !important;
+}

@@ -1,0 +1,80 @@
+.portfolio-thumbnail {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+    overflow: hidden;
+
+    cursor: pointer;
+
+    &::before {
+        background: inherit;
+        background-size: cover;
+        transform-origin: center;
+        transition: transform 2s cubic-bezier(0.1, 0.9, 0.44, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        content: '';
+    }
+
+    &::after {
+        // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 12, 42, 0.55) 55%, rgba(0, 12, 42, 0.85) 100%);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 12, 42, 0.85) 65%, rgba(0, 12, 42, 0.95) 100%);
+        background-size: auto 150%;
+        background-position: 0 -20%;
+        background-repeat: no-repeat;
+        transition: background-position 0.5s ease;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        content: '';
+    }
+
+    &:hover {
+        &::before {
+            transform: scale(1.05);
+        }
+
+        &::after {
+            background-position: 0 5%;
+        }
+    }
+}
+
+.nda-locked {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    line-height: 1.2;
+    cursor: default;
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    img {
+        height: 4rem !important;
+    }
+
+    a {
+        color: white;
+    }
+}

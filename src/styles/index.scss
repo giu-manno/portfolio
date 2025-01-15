@@ -1,0 +1,178 @@
+// DM Sans
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&display=swap');
+// IBM Plex Serif
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+// Bootstrap variables overrides
+$primary: #210124;
+$body-color: #210124;
+$secondary: #F5F5F5;
+$border-radius-xxl: 1.5rem !important;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+.content {
+    height: 150vh;
+}
+
+* {
+    font-family: 'DM Sans';
+    letter-spacing: -0.04rem;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+b {
+    font-weight: 600 !important;
+}
+
+a {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+mark {
+    -webkit-animation: .7s highlightForward .7s 1 ease forwards;
+            animation: .7s highlightForward .7s 1 ease forwards;
+    background-color: transparent !important;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    background-size: 200% 100%; 
+    background-image: linear-gradient(to right, $primary 50%, white 50%),
+                      linear-gradient(to right, transparent 50%, $primary 50%);
+    transition: background-position 1s linear; 
+    -webkit-background-clip: text, border-box;
+    background-clip: text, border-box; 
+    color: transparent; 
+}
+
+@-webkit-keyframes highlightForward {
+    to {
+        background-position: -100% 0;
+    }
+}
+
+@keyframes highlightForward {
+    to {
+        background-position: -100% 0;
+    }
+}
+
+.highlightable {
+    background-image: linear-gradient(to right, $primary 50%, white 50%),
+                      linear-gradient(to right, transparent 50%, $primary 50%);
+    background-size: 200% 100%; 
+    background-position: 0 0;
+    background-color: transparent !important;
+    -webkit-background-clip: text, border-box;
+    background-clip: text, border-box;
+
+    color: transparent;
+    text-decoration-color: $primary;
+    
+    padding: .1rem 0.1875em;
+    margin: -.1rem -0.1875em;
+    
+    transition: background-position .7s ease; 
+
+    &:hover {
+        background-position: -100% 0;
+    }
+}
+
+.highlightable-inverted {
+    background-image: linear-gradient(to right, white 50%, $primary 50%),
+                      linear-gradient(to right, $primary 50%, white 50%);
+    background-size: 200% 100%; 
+    background-position: 0 0;
+    background-color: transparent !important;
+    -webkit-background-clip: text, border-box;
+    background-clip: text, border-box;
+
+    color: transparent;
+    text-decoration-color: white;
+    
+    padding: .1rem 0.1875em;
+    margin: -.1rem -0.1875em;
+    
+    transition: background-position .7s ease; 
+
+    &:hover {
+        background-position: -100% 0;
+    }
+}
+
+.display-font {
+    font-family: 'IBM Plex Serif';
+    letter-spacing: -0.2rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.display-text {
+    font-family: 'IBM Plex Serif';
+    letter-spacing: -0.05rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    letter-spacing: -0.06rem;
+}
+
+.annotations {
+    font-size: .875rem;
+    opacity: .5;
+}
+
+.badge {
+    font-weight: 400 !important;
+    color: rgba(0, 0, 0, 0.44) !important;
+    padding: 0.45em 0.65em;
+}
+
+.svg-shadow-sm {
+    filter: drop-shadow(var(--bs-box-shadow-sm)) !important;
+}
+
+.square {
+    aspect-ratio: 1 / 1 !important;
+}
+
+.horizontal-rectangle-big {
+    aspect-ratio: 3 / 2 !important;
+}
+
+.horizontal-rectangle {
+    aspect-ratio: 2 / 1 !important;
+}
+
+.horizontal-rectangle-dense {
+    aspect-ratio: 4 / 1 !important;
+}
+
+.vertical-rectangle {
+    aspect-ratio: 1 / 2 !important;
+}
+
+.vertical-rectangle-dense {
+    aspect-ratio: 1 / 4 !important;
+}
