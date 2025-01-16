@@ -27,26 +27,6 @@
             margin-left: 5rem;
         }
     }
-
-    @supports (animation-timeline: scroll()) {
-        .scroll-shadow {
-            animation: scroll-shadow linear both;
-            animation-timeline: scroll();
-            animation-range: 0ex 5ex;
-
-            background-color: var(--bs-body-bg);
-        }
-
-        @keyframes scroll-shadow {
-            from {
-                box-shadow: none;
-            }
-
-            to {
-                box-shadow: var(--bs-box-shadow-sm);
-            }
-        }
-    }
 }
 
 .nav-link, .navbar-text {

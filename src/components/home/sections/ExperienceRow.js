@@ -34,7 +34,7 @@ export default function ExperienceRow() {
                                 <b>Bachelor's Degree in Design</b>
                                 <span>
                                     <a target="_blank" href="https://ufsc.br" rel="noopener noreferrer" style={{textDecorationThickness: "1px"}} className="highlightable">
-                                        Federal University of Santa Catarina (UFSC)
+                                        <span>Federal University of Santa Catarina (UFSC)</span>
                                     </a>
                                     <p>2019 - 2024</p>
                                 </span>

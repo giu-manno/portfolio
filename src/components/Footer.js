@@ -54,7 +54,7 @@ export function ProjectFooter({ nextProjectName, nextProjectSrc}) {
                     <div className="w-100 h-100 d-flex flex-column align-items-end">
                         <h3 className="m-0 display-font">next project</h3>
                         <p className="subtitle mt-3">
-                            <a href={nextProjectSrc} className="contact-link highlightable-inverted">{nextProjectName}<span className="arrow"> →</span></a>
+                            <a href={nextProjectSrc} className="contact-link highlightable-inverted">{nextProjectName}<span className="arrow"> &#8594;</span></a>
                         </p>
                     </div>
                 </Col> */}

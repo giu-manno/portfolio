@@ -11,8 +11,8 @@ export default function GreetingRow() {
                 <h1 className="greeting-header display-font d-flex align-items-center">hi, i'm giulia! <AppleEmoji className="ms-4" name="sparkles" /></h1>
 
                 <Stack gap={4}>
-                    <h2>I'm a well-versed <mark>Product Designer</mark> with years of experience in tech.</h2>
-                    <p className="subtitle">I've worked in small and big companies, on small and big projects, focused on <mark>making ideas come true in a user-friendly way.</mark></p>
+                    <h2>I'm a well-versed <mark><span>Product Designer</span></mark> with years of experience in tech.</h2>
+                    <p className="subtitle">I've worked in small and big companies, on small and big projects, focused on <mark><span>making ideas come true in a user-friendly way.</span></mark></p>
 
                     <Stack gap={5} direction="horizontal">
                         <a href="#about" className="subtitle">
@@ -27,7 +27,14 @@ export default function GreetingRow() {
                     </Stack>
 
                     <div className="w-100 h-100 d-flex flex-row align-items-end justify-content-end">
-                        <h3><a href="#contact" className="display-font contact-link highlightable">let's chat!<span className="arrow"> →</span></a></h3>
+                        <a href="#contact" className="highlightable contact-link">
+                            <h3 className="link-underline">
+                                <span className="display-font">
+                                    let's chat!
+                                    <em className="arrow">&nbsp;&#8594;</em>
+                                </span>
+                            </h3>
+                        </a>
                     </div>
                 </Stack>
             </Col>

@@ -49,23 +49,29 @@ a {
 }
 
 mark {
-    -webkit-animation: .7s highlightForward .7s 1 ease forwards;
-            animation: .7s highlightForward .7s 1 ease forwards;
+    animation: .7s highlightForward .7s 1 ease forwards;
+    transition: background-position 1s linear; 
+    
+    background-image: linear-gradient(to right, transparent 50.1%, $primary 49.9%);
     background-color: transparent !important;
+    background-size: 200% 100%; 
+    
     padding-top: .1rem;
     padding-bottom: .1rem;
-    background-size: 200% 100%; 
-    background-image: linear-gradient(to right, $primary 50%, white 50%),
-                      linear-gradient(to right, transparent 50%, $primary 50%);
-    transition: background-position 1s linear; 
-    -webkit-background-clip: text, border-box;
-    background-clip: text, border-box; 
-    color: transparent; 
-}
 
-@-webkit-keyframes highlightForward {
-    to {
-        background-position: -100% 0;
+    span {
+        animation: .7s highlightForward .7s 1 ease forwards;
+        transition: background-position 1s linear; 
+        
+        background-clip: text, border-box;
+        background-image: linear-gradient(to right, $primary 50%, white 50%);
+        background-color: transparent !important;
+        background-size: 200% 100%; 
+        
+        padding-top: .1rem;
+        padding-bottom: .1rem;
+        
+        color: transparent;
     }
 }
 
@@ -76,24 +82,34 @@ mark {
 }
 
 .highlightable {
-    background-image: linear-gradient(to right, $primary 50%, white 50%),
-                      linear-gradient(to right, transparent 50%, $primary 50%);
-    background-size: 200% 100%; 
-    background-position: 0 0;
+    transition: background-position .7s ease; 
+    
+    background-image: linear-gradient(to right, transparent 50.1%, $primary 49.9%);
     background-color: transparent !important;
-    -webkit-background-clip: text, border-box;
-    background-clip: text, border-box;
-
-    color: transparent;
-    text-decoration-color: $primary;
+    background-size: 200% 100%; 
     
     padding: .1rem 0.1875em;
     margin: -.1rem -0.1875em;
-    
-    transition: background-position .7s ease; 
+
+    text-decoration-color: $primary;
+
+    span {
+        transition: background-position .7s ease;
+        
+        background-clip: text, border-box;
+        background-image: linear-gradient(to right, $primary 50%, white 50%);
+        background-color: transparent !important;
+        background-size: 200% 100%; 
+
+        color: transparent;
+    }
 
     &:hover {
         background-position: -100% 0;
+
+        span {
+            background-position: -100% 0;
+        }
     }
 }
 

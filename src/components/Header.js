@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Nav, Navbar, Offcanvas, Collapse } from "react-bootstrap";
 import { useLocation, useNavigate } from 'react-router-dom'
 
@@ -17,6 +17,20 @@ export default function Header() {
         } 
     }
 
+    const navBarRef = useRef(null);
+    const handleScroll = () => {
+        const position = window.scrollY;
+        navBarRef.current.style.boxShadow = `0 0.125rem 0.25rem rgba(0, 0, 0, ${Math.min(position / 500, 0.075)})`;
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <Navbar expand="xl" sticky="top" className='py-3'>
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-body" />
@@ -29,7 +43,7 @@ export default function Header() {
                 </Offcanvas.Header>
 
                 <Offcanvas.Body>
-                    <Nav className={`bg-body scroll-shadow rounded-5 ${((location.pathname !== '/portfolio' && location.pathname !== '/portfolio/') && 'back-button') || ''}`}>
+                    <Nav ref={navBarRef} className={`bg-body rounded-5 ${((location.pathname !== '/portfolio' && location.pathname !== '/portfolio/') && 'back-button') || ''}`}>
                         <Nav.Link className="d-flex flex-row" href={((location.pathname === '/portfolio' || location.pathname === '/portfolio/') && '#home') || ''} onClick={handleHomeButton}>
                             <Collapse in={backButton} dimension='width'>
                                 <p>&lt; back to&nbsp;</p>
