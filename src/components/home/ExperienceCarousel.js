@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import Flickity from 'react-flickity-component';
 import 'styles/flickity.css';
 
@@ -9,8 +10,9 @@ import equipeDigitalLogo from 'resources/img/home/equipeDigitalLogo.svg';
 import technovationLogo from 'resources/img/home/technovationLogo.svg';
 import ufscLogo from 'resources/img/home/ufscLogo.svg';
 
-
 import ExperienceList from 'components/home/ExperienceList';
+
+import { WindowSizeContext } from 'App';
 
 const flickityOptions = {
     accessibility: true,
@@ -23,6 +25,68 @@ const flickityOptions = {
 };
 
 export default function ExperienceCarousel() {
+    const windowBreakpoint = useContext(WindowSizeContext);
+    const listSize = ['xs', 'sm', 'md', 'lg'].includes(windowBreakpoint) ? 3 : 4;
+
+    const items = [
+        {
+            icon: norusLogo,
+            alt: 'Norus icon',
+            description: 'UX/UI Design Analyst @ Norus',
+            period: 'Mar 2024 - Present',
+            url: 'https://www.norus.com.br/'
+        },
+        {
+            icon: labsecLogo,
+            alt: 'LabSEC icon',
+            description: 'Volunteer Designer @ LabSEC',
+            period: 'Apr 2023 - Dec 2023',
+            url: 'https://labsec.ufsc.br/'
+        },
+        {
+            icon: sidiLogo,
+            alt: 'SiDi icon',
+            description: 'UX/UI Intern @ SiDi/Samsung',
+            period: 'Aug 2022 - Dec 2023',
+            url: 'https://www.sidi.org.br/en/'
+        },
+        {
+            icon: equipeDigitalLogo,
+            alt: 'EquipeDigital.com icon',
+            description: 'Web Designer @ EquipeDigital.com',
+            period: 'May 2021 - Mar 2022',
+            url: 'https://equipedigital.com/'
+        },
+        {
+            icon: technovationLogo,
+            alt: 'Norus icon',
+            description: 'Mentor @ Technovation Girls',
+            period: 'Feb 2024 - May 2024',
+            url: 'https://www.technovationbrasil.org/'
+        },
+        {
+            icon: ufscLogo,
+            alt: 'LabSEC icon',
+            description: 'PIBIC Researcher @ UFSC',
+            period: 'Sep 2021 - Sep 2022',
+            url: 'https://www.ufsc.br/'
+        },
+        {
+            icon: ufscLogo,
+            alt: 'SiDi icon',
+            description: 'Teaching Assistant @ UFSC',
+            period: 'Sep 2020 - May 2021',
+            url: 'https://www.ufsc.br/'
+        },
+        {
+            icon: null,
+            alt: '',
+            description: '',
+            period: '',
+            url: ''
+        }
+    ];
+
     return (
         <Flickity
             className={'carousel'}
@@ -30,67 +94,9 @@ export default function ExperienceCarousel() {
             reloadOnUpdate
             static
         >
-            <ExperienceList items={[
-                {
-                    icon: norusLogo,
-                    alt: 'Norus icon',
-                    description: 'UX/UI Design Analyst @ Norus',
-                    period: 'Mar 2024 - Present',
-                    url: 'https://www.norus.com.br/'
-                },
-                {
-                    icon: labsecLogo,
-                    alt: 'LabSEC icon',
-                    description: 'Volunteer Designer @ LabSEC',
-                    period: 'Apr 2023 - Dec 2023',
-                    url: 'https://labsec.ufsc.br/'
-                },
-                {
-                    icon: sidiLogo,
-                    alt: 'SiDi icon',
-                    description: 'UX/UI Intern @ SiDi/Samsung',
-                    period: 'Aug 2022 - Dec 2023',
-                    url: 'https://www.sidi.org.br/en/'
-                },
-                {
-                    icon: equipeDigitalLogo,
-                    alt: 'EquipeDigital.com icon',
-                    description: 'Social Media & Web Designer @ EquipeDigital.com',
-                    period: 'May 2021 - Mar 2022',
-                    url: 'https://equipedigital.com/'
-                }
-            ]} />
+            <ExperienceList items={items.slice(0, listSize)} />
 
-            <ExperienceList items={[
-                {
-                    icon: technovationLogo,
-                    alt: 'Norus icon',
-                    description: 'Mentor @ Technovation Girls Florianópolis',
-                    period: 'Feb 2024 - May 2024',
-                    url: 'https://www.technovationbrasil.org/'
-                },
-                {
-                    icon: ufscLogo,
-                    alt: 'LabSEC icon',
-                    description: 'PIBIC Scholarship Researcher @ UFSC',
-                    period: 'Sep 2021 - Sep 2022',
-                    url: 'https://www.ufsc.br/'
-                },
-                {
-                    icon: ufscLogo,
-                    alt: 'SiDi icon',
-                    description: 'Teaching Assistant @ UFSC',
-                    period: 'Sep 2020 - May 2021',
-                    url: 'https://www.ufsc.br/'
-                },
-                {
-                    icon: null,
-                    alt: '',
-                    description: '',
-                    period: '',
-                    url: ''
-                }
-            ]} />
+            <ExperienceList items={items.slice(listSize, 2 * listSize)} />
         </Flickity>
     );
 }

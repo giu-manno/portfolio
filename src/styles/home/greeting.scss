@@ -1,13 +1,39 @@
 .greeting-header {
     position: absolute;
-    top: -10%;
+    top: -3rem;
     left: 10px;
+
+    // Tablet
+    @media only screen and (max-width: 992px) {
+        top: -2rem;
+    }
+
+    // Mobile
+    @media only screen and (max-width: 576px) {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .greeting-panel {
     padding: 3rem !important;
     padding-top: 5rem !important;
     position: relative;
+    background-color: var(--bs-secondary);
+
+    // Tablet
+    @media only screen and (max-width: 992px) {
+        padding: 1.5rem !important;
+        padding-top: 2rem !important;
+    }
+
+    // Mobile
+    @media only screen and (max-width: 576px) {
+        padding: 0 !important;
+        background-color: transparent;
+    }
 }
 
 .contact-link {
@@ -26,7 +52,7 @@
 }
 
 .profile-picture {
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     background-image: url('../../resources/img/home/profile.jpeg');
     background-size: 135%;
     background-position: 75% 50%;
@@ -45,6 +71,13 @@
         -webkit-user-select: none; /* Safari */
         -ms-user-select: none; /* IE 10 and IE 11 */
         user-select: none; /* Standard syntax */
+
+        // Tablet
+        @media only screen and (max-width: 992px) {
+            top: -11%;
+            left: -15%;
+            width: 7rem;
+        }
     }
 
     @keyframes rotate {

@@ -9,16 +9,16 @@ import PortfolioThumbnail from "components/home/Thumbnail";
 
 export default function PortfolioRow() {
     return (
-        <Col>
+        <div className="px-sm-0 px-4">
             {/* section title */}
             <Row>
-                <h3 className="p-0 display-font mb-4">selected work</h3>
+                <h3 className="p-0 display-font mb-lg-4 mb-sm-3 mb-2">selected work</h3>
             </Row>
 
             {/* section content */}
-            <Row id="work" className="gap-4">
+            <Row id="work" className="gap-lg-4 gap-sm-3 gap-2">
                 <PortfolioThumbnail
-                    xs={4} 
+                    lg={4} 
                     backgroundImage={adesThumbnail}
                     title="Ades - Digital Signature Platform"
                     subtitle="LabSEC"
@@ -60,6 +60,6 @@ export default function PortfolioRow() {
                     </Row>
                 </Col>
             </Row>
-        </Col>
+        </div>
     );
 }

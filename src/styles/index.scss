@@ -29,14 +29,39 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
     font-size: 4rem;
+
+    // Tablet
+    @media only screen and (max-width: 992px) {
+        font-size: 2.75rem;
+    }
+
+    // Mobile
+    @media only screen and (max-width: 576px) {
+        font-size: 2rem;
+    }
 }
 
 h2 {
     font-size: 2rem;
+
+    // Mobile
+    @media only screen and (max-width: 576px) {
+        font-size: 1.25rem;
+    }
 }
 
 h3 {
     font-size: 2.5rem;
+
+    // Tablet
+    @media only screen and (max-width: 992px) {
+        font-size: 2rem;
+    }
+
+    // Mobile
+    @media only screen and (max-width: 576px) {
+        font-size: 1.25rem;
+    }
 }
 
 b {
@@ -140,6 +165,11 @@ mark {
     letter-spacing: -0.2rem;
     font-style: italic;
     font-weight: 400;
+
+    // Tablet
+    @media only screen and (max-width: 992px) {
+        letter-spacing: -0.1rem;
+    }
 }
 
 .display-text {
@@ -149,9 +179,29 @@ mark {
     font-weight: 400;
 }
 
+.body-text {
+    font-family: 'DM Sans';
+    letter-spacing: -0.04rem;
+    text-decoration: none;
+    text-transform: none;
+    font-style: none;
+}
+
 .subtitle {
     font-size: 1.5rem;
     letter-spacing: -0.06rem;
+
+    // Tablet
+    @media only screen and (max-width: 992px) {
+        font-size: 1.5rem;
+        letter-spacing: -0.04rem;
+        line-height: 100%;
+    }
+
+    // Mobile
+    @media only screen and (max-width: 576px) {
+        font-size: 1rem;
+    }
 }
 
 .annotations {

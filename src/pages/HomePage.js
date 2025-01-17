@@ -12,7 +12,7 @@ import Footer from "components/Footer";
 export default function HomePage() {
     return (
         <Container className="home-content">
-            <Stack gap={4}>
+            <Stack className="gap-4">
                 <GreetingRow />
                 <AboutRow />
                 <PortfolioRow />

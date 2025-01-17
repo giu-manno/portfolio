@@ -6,5 +6,14 @@
 
 .home-content {
     margin-top: 4rem;
+
+    @media only screen and (max-width: 992px) {
+        margin-top: 2rem;
+    }
+
+    // Mobile
+    @media only screen and (max-width: 576px) {
+        margin-top: 0;
+    }
 }
 
