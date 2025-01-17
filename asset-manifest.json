@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.410a0226.css",
-    "main.js": "/portfolio/static/js/main.4e1f4954.js",
+    "main.css": "/portfolio/static/css/main.f76240ef.css",
+    "main.js": "/portfolio/static/js/main.ad35250d.js",
     "static/js/633.0db642ef.chunk.js": "/portfolio/static/js/633.0db642ef.chunk.js",
     "static/media/wireframes.jpg": "/portfolio/static/media/wireframes.cc770a9ca282ae2edbf5.jpg",
     "static/media/ufscLogo.svg": "/portfolio/static/media/ufscLogo.3b68512dc7dfe664b125436449cf6623.svg",
@@ -15,8 +15,10 @@
     "static/media/s4eThumbnail.jpg": "/portfolio/static/media/s4eThumbnail.c81a2cf364c32b1f771a.jpg",
     "static/media/mapping.svg": "/portfolio/static/media/mapping.c12eea7fa8c8c63d7253d4c2c3c01847.svg",
     "static/media/tests3.jpg": "/portfolio/static/media/tests3.727b90704597ea80d0f2.jpg",
+    "static/media/about-mobile.png": "/portfolio/static/media/about-mobile.fa742a509d9649f3f25b.png",
     "static/media/tests2.jpg": "/portfolio/static/media/tests2.272d97afe3fc47ec572d.jpg",
     "static/media/technovationLogo.svg": "/portfolio/static/media/technovationLogo.b344b00da96ab04b52abb7120a7d2f6e.svg",
+    "static/media/Giulia-Manno_CV.pdf": "/portfolio/static/media/Giulia-Manno_CV.6986629547636441b5d5.pdf",
     "static/media/equipeDigitalLogo.svg": "/portfolio/static/media/equipeDigitalLogo.443b1cf3e00ef1eb770443c2669ee3e4.svg",
     "static/media/sidiLogo.svg": "/portfolio/static/media/sidiLogo.a52cecbffaf54b145ec4613e6c1009d6.svg",
     "static/media/norusLogo.svg": "/portfolio/static/media/norusLogo.d2488549992909a470f77d0fde31b525.svg",
@@ -24,12 +26,12 @@
     "static/media/agileLogo.svg": "/portfolio/static/media/agileLogo.1286eb357def7ddcccff2bc0a83b0439.svg",
     "static/media/figmaLogo.svg": "/portfolio/static/media/figmaLogo.389c53241fe7ca62a96af25fb457f509.svg",
     "index.html": "/portfolio/index.html",
-    "main.410a0226.css.map": "/portfolio/static/css/main.410a0226.css.map",
-    "main.4e1f4954.js.map": "/portfolio/static/js/main.4e1f4954.js.map",
+    "main.f76240ef.css.map": "/portfolio/static/css/main.f76240ef.css.map",
+    "main.ad35250d.js.map": "/portfolio/static/js/main.ad35250d.js.map",
     "633.0db642ef.chunk.js.map": "/portfolio/static/js/633.0db642ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.410a0226.css",
-    "static/js/main.4e1f4954.js"
+    "static/css/main.f76240ef.css",
+    "static/js/main.ad35250d.js"
   ]
 }
