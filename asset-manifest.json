@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f76240ef.css",
-    "main.js": "/portfolio/static/js/main.ad35250d.js",
+    "main.js": "/portfolio/static/js/main.4eb1338a.js",
     "static/js/633.0db642ef.chunk.js": "/portfolio/static/js/633.0db642ef.chunk.js",
     "static/media/wireframes.jpg": "/portfolio/static/media/wireframes.cc770a9ca282ae2edbf5.jpg",
     "static/media/ufscLogo.svg": "/portfolio/static/media/ufscLogo.3b68512dc7dfe664b125436449cf6623.svg",
@@ -27,11 +27,11 @@
     "static/media/figmaLogo.svg": "/portfolio/static/media/figmaLogo.389c53241fe7ca62a96af25fb457f509.svg",
     "index.html": "/portfolio/index.html",
     "main.f76240ef.css.map": "/portfolio/static/css/main.f76240ef.css.map",
-    "main.ad35250d.js.map": "/portfolio/static/js/main.ad35250d.js.map",
+    "main.4eb1338a.js.map": "/portfolio/static/js/main.4eb1338a.js.map",
     "633.0db642ef.chunk.js.map": "/portfolio/static/js/633.0db642ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f76240ef.css",
-    "static/js/main.ad35250d.js"
+    "static/js/main.4eb1338a.js"
   ]
 }
