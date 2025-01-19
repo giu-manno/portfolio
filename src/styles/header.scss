@@ -1,30 +1,105 @@
-@media only screen and (min-width: 1200px) {
-    .navbar-nav {
-        font-size: 1.5rem !important;
-        padding: 0.25rem calc(1.5rem + 8px) !important;
+.navbar {
+    transform: translate3d(0px, 0px, 0px);
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: center !important;
 
-        transition: margin .7s ease, width .7s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: calc(50% - (1095px / 2));
-        margin-right: calc(50% - (1095px / 2));
-        text-wrap: nowrap;
-        white-space: nowrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
-        .navbar-text {
-            padding: 0 3.5rem !important;
+    &::after {
+        content: '';
+        flex: 0;
+
+        transition: flex .7s ease;
+    }
+
+    &.back-button {
+        margin-left: 5rem;
+
+        &::after {
+            flex: 1;
         }
+    }
 
-        .nav-link {
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-
-            transition: padding .7s ease;
-        }
+    // Small breakpoint
+    @media only screen and (max-width: 767px) {
+        padding-top: 0 !important;
 
         &.back-button {
-            margin-left: 5rem;
+            margin-left: 0;
+
+            .navbar-nav::after {
+                flex: 1;
+            }
+        }
+    }
+}
+
+.navbar-nav {
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+    white-space: nowrap;
+
+    padding: 0.25rem calc(1.5rem + 8px) !important;
+    border-radius: var(--bs-border-radius-xxl);
+
+    transition: width .7s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .navbar-text {
+        padding: 0 3.5rem !important;
+    }
+
+    .nav-link {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        transition: padding .7s ease;
+    }
+
+    &::after {
+        content: '';
+        transition: flex .7s ease;
+    }
+
+    // Large breakpoint
+    @media only screen and (max-width: 1199px) {
+        font-size: 1.25rem;
+
+        .navbar-text {
+            padding: 0 3rem !important;
+        }
+    }
+
+    // Medium breakpoint
+    @media only screen and (max-width: 991px) {
+        font-size: 1rem;
+
+        .navbar-text {
+            padding: 0 2rem !important;
+        }
+    }
+
+    // Small breakpoint
+    @media only screen and (max-width: 767px) {
+        border-radius: 0 !important;
+        width: 100%;
+
+        .navbar-text {
+            margin: auto;
+            padding: 0 1.25rem !important;
+        }
+    }
+
+    // Extra small breakpoint
+    @media only screen and (max-width: 575px) {
+        .nav-link {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
         }
     }
 }

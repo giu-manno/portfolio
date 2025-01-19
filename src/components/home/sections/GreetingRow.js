@@ -10,7 +10,7 @@ export default function GreetingRow() {
         <Row className="gap-4 px-4 px-sm-0" id="home">
             {/* greeting panel */}
             <Col className="rounded-5 greeting-panel">
-                <h1 className="greeting-header display-font d-flex align-items-center">
+                <h1 id="greetingTitle" className="greeting-header display-font d-flex align-items-center">
                     hi, i'm giulia! <AppleEmoji className="ms-4" name="sparkles" />
                 </h1>
 

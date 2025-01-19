@@ -1,0 +1,13 @@
+.footer-title {
+    // Extra small breakpoint
+    @media only screen and (max-width: 576px) {
+        font-size: 2rem;
+    }
+}
+
+.footer-text {
+    // Small breakpoint
+    @media only screen and (max-width: 767px) {
+        font-size: 1rem;
+    }
+}

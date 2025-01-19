@@ -1,26 +1,31 @@
+import { useContext } from 'react';
 import Flickity from 'react-flickity-component';
 import 'styles/flickity.css';
 
 import Testimonial from 'components/home/Testimonial';
 
-const flickityOptions = {
-    initialIndex: 2,
-    accessibility: true,
-    draggable: true,
-    freeScroll: true,
-    wrapAround: true,
-    autoPlay: false,
-    prevNextButtons: true,
-    pageDots: true,
-    resize: true,
-    contain: false,
-    adaptiveHeight: true,
-};
+import { WindowSizeContext } from 'App';
 
 export default function TestimonialsCarousel() {
+    const windowBreakpoint = useContext(WindowSizeContext);
+
+    const flickityOptions = {
+        initialIndex: 2,
+        accessibility: true,
+        draggable: true,
+        freeScroll: true,
+        wrapAround: true,
+        autoPlay: false,
+        prevNextButtons: true,
+        pageDots: true,
+        resize: true,
+        adaptiveHeight: false,
+        cellAlign: windowBreakpoint === 'xs' ? 'left' : 'center',
+    };
+
     return (
         <Flickity
-            className={'fade-borders'}
+            className={'fade-borders testimonials-carousel'}
             options={flickityOptions}
             reloadOnUpdate
             static

@@ -6,6 +6,33 @@
         position: relative;
         bottom: 0;
         padding-top: 1rem;
+
+        // Extra small breakpoint
+        @media only screen and (max-width: 576px) {
+            padding-top: .5rem;
+        }
+    }
+
+    // Small breakpoint
+    @media only screen and (max-width: 768px) {
+        mask-image: linear-gradient(to left, #000 98%, transparent), linear-gradient(to right, #000 98%, transparent);
+    }
+
+    // Extra small breakpoint
+    @media only screen and (max-width: 576px) {
+        mask-image: none;
+    }
+}
+
+.testimonials-carousel {
+    margin-right: - calc(1.5rem * 0.5);
+    margin-left: - calc(1.5rem * 0.5);
+    padding-left: 1.5rem;
+
+    overflow: hidden;
+
+    .flickity-viewport {
+        overflow: visible;
     }
 }
 
@@ -14,22 +41,12 @@
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 
-    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 
-    aspect-ratio: 1 / 1;
+    min-height: 100%;
 
     p + p {
         margin-top: 1rem;
-    }
-
-    // Large breakpoint
-    @media only screen and (max-width: 1200px) {
-        aspect-ratio: 6 / 7;
-    }
-
-    // Medium breakpoint
-    @media only screen and (max-width: 992px) {
-        aspect-ratio: 1 / 1;
     }
 
     // Small breakpoint
@@ -42,6 +59,5 @@
     // Extra small breakpoint
     @media only screen and (max-width: 576px) {
         font-size: 0.875rem;
-        aspect-ratio: 6 / 9;
     }
 }

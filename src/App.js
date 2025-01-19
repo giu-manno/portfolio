@@ -11,7 +11,7 @@ export const WindowSizeContext = createContext(null);
 function App() {
     // Viewport width
     const mqlXS = window.matchMedia('(max-width: 576px)') // Extra small breakpoint
-    const mqlSM = window.matchMedia('(min-width: 576px) and (max-width: 768px)') // Small breakpoint
+    const mqlSM = window.matchMedia('(min-width: 576px) and (max-width: 767px)') // Small breakpoint
     const mqlMD = window.matchMedia('(min-width: 768px) and (max-width: 992px)') // Medium breakpoint
     const mqlLG = window.matchMedia('(min-width: 992px) and (max-width: 1200px)') // Large breakpoint
     const mqlXL = window.matchMedia('(min-width: 1200px) and (max-width: 1400px)') // Extra large breakpoint
