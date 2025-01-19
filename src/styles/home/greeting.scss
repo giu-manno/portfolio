@@ -38,6 +38,8 @@
 
 .contact-link {
     & .arrow {
+        font-family: 'Courier New', Courier, monospace;
+        font-style: normal !important;
         display: inline-flex;
         justify-content: center;
         text-decoration: none !important;
@@ -66,7 +68,7 @@
         animation: rotate 25s linear infinite;
         transform-origin: 50% 50%;
         filter: invert(1) grayscale(1) contrast(9);
-        mix-blend-mode: difference;
+        mix-blend-mode: exclusion;
 
         -webkit-user-select: none; /* Safari */
         -ms-user-select: none; /* IE 10 and IE 11 */
