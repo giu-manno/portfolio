@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { Row, Col } from "react-bootstrap";
 
-import aboutPicture from "resources/img/home/about.png";
-import aboutPictureMobile from "resources/img/home/about-mobile.png";
+import aboutPicture from "resources/img/home/about.webp";
+import aboutPictureMobile from "resources/img/home/about-mobile.webp";
 
 import AppleEmoji from "components/AppleEmoji";
 

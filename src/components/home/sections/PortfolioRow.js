@@ -1,7 +1,7 @@
 import { Row, Col } from "react-bootstrap";
 
-import adesThumbnail from "resources/img/home/adesThumbnail.jpg";
-import s4eThumbnail from "resources/img/home/s4eThumbnail.jpg";
+import adesThumbnail from "resources/img/home/adesThumbnail.webp";
+import s4eThumbnail from "resources/img/home/s4eThumbnail.webp";
 // import findiThumbnail from "resources/img/home/findiThumbnail.jpg";
 // import sidiThumbnail from "resources/img/home/sidiThumbnail.jpg";
 
