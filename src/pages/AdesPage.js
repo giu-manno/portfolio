@@ -38,31 +38,37 @@ export default function AdesPage({ setActiveSection, setImageIndex }) {
     return (
         <Container>
             <Stack gap={5}>
-                <div ref={overviewRef} className="d-flex flex-column gap-5">
+                <div ref={overviewRef} className="d-flex flex-column gap-4 gap-xl-5 px-4 px-sm-0">
                     {/* title */}
-                    <h1>Ades - a user-friendly digital signature platform.</h1>
+                    <Row id="overview">
+                        <h1 className="p-0">Ades - a user-friendly digital signature platform.</h1>
+                    </Row>
 
                     {/* project details */}
-                    <Row id="overview" className="gap-4">
-                        <ParallaxImage src={imageList[0].src} onClick={() => setImageIndex(0)} />
+                    <Row className="gap-4 gap-xl-5">
+                        <ParallaxImage className="detail-image" src={imageList[0].src} onClick={() => setImageIndex(0)} />
 
-                        <Col xs={3} className="bg-secondary rounded-5 p-4">
-                            <div className="h-100 d-flex flex-column gap-4 mx-2 my-0">
-                                <h2 className="display-font">project details</h2>
+                        <Col xl={3} lg={4} className="bg-secondary rounded-5 p-4 position-relative mt-3 mt-lg-0">
+                            <div className="h-100 d-flex flex-column gap-3 gap-xl-4 mx-0 mx-md-2 my-0">
+                                <h2 className="display-font d-none d-lg-block">project details</h2>
+                                <h3 className="display-font introduction-header d-block d-lg-none">project details</h3>
 
-                                <span>
-                                    <p className="annotations">Company</p>
-                                    <p>Laboratory of Computer Security (LabSEC - UFSC)</p>
-                                </span>
+                                <div className="gap-3 gap-xl-4 d-flex flex-row flex-lg-column">
+                                    <span className="flex-fill flex-basis-0">
+                                        <p className="annotations">Company</p>
+                                        <p className="details">Laboratory of Computer Security (LabSEC - UFSC)</p>
+                                    </span>
 
-                                <span>
-                                    <p className="annotations">Timeline</p>
-                                    <p>April - December 2023</p>
-                                </span>
+                                    <span className="flex-fill flex-basis-0">
+                                        <p className="annotations">Timeline</p>
+                                        <p className="details">April - December 2023</p>
+                                    </span>
+                                </div>
 
                                 <span>
                                     <p className="annotations">Role and Activities</p>
-                                    <p>For this project, I handled the full journey of exploration, research, prototyping, testing and documentation. As the only Designer, I wore many hats, helping with requirements and specifications for developers.</p>
+                                    <p className="details d-block d-md-none">UX Research - UX Design - Product Design</p>
+                                    <p className="details d-none d-md-block">For this project, I handled the full journey of exploration, research, prototyping, testing and documentation. As the only Designer, I wore many hats, helping with requirements and specifications for developers.</p>
                                 </span>
                             </div>
                         </Col>
@@ -73,18 +79,18 @@ export default function AdesPage({ setActiveSection, setImageIndex }) {
                         <Col className="bg-secondary rounded-5 introduction-panel">
                             <h3 className="display-font introduction-header">overview</h3>
 
-                            <div className="d-flex flex-column gap-4">
-                                <p className="subtitle">
+                            <div className="d-flex flex-column gap-4 text-md-start text-center">
+                                <p className="subtitle lh-1">
                                     With the advance of information exchange in the digital realm, <b>data protection and security have become an increasing concern when creating interfaces.</b>
                                 </p>
-                                <p>
+                                <p className="d-none d-md-block">
                                     However, a system's security requirements often manifest in ways that conflict with user needs. This was the issue that my client, a Computer Security lab, seldom faced, and what motivated them to initiate this project with me.
                                     They had developed a new technology for digital signing, and wanted to materialize and put it to test through a brand-new <b>digital signature platform.</b>
                                 </p>
                             </div>
                         </Col>
 
-                        <Col>
+                        <Col lg={6}>
                             <div className="d-flex align-items-center justify-content-center w-100 h-100">
                                 <h2 className="text-center">“We need to develop a web-based, digital signature platform, that is easy to use, even with complex functionatilities.”</h2>
                             </div>
@@ -96,7 +102,7 @@ export default function AdesPage({ setActiveSection, setImageIndex }) {
                             src={imageList[1].src}
                             className="viewport-panel"
                             children={
-                                <Button href="#results" onClick={(e) => {e.stopPropagation();}} className="results-button rounded-5 fs-5">
+                                <Button href="#results" onClick={(e) => {e.stopPropagation();}} className="results-button rounded-5 fs-5 d-none d-sm-block">
                                     Click here if you want to go straight to the results!
                                 </Button>
                             }

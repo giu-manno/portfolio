@@ -1,17 +1,54 @@
+.detail-image {
+    // Large breakpoint
+    @media only screen and (max-width: 992px) {
+        aspect-ratio: 3 / 2;
+    }
+
+    // Mobile breakpoint
+    @media only screen and (max-width: 576px) {
+        aspect-ratio: 1 / 1;
+    }
+}
+
 .introduction-header {
     position: absolute;
-    top: -10%;
+    top: -2rem;
     left: 10px;
+
+    // Tablet
+    @media only screen and (max-width: 992px) {
+        top: -1.5rem;
+    }
+
+    // Mobile
+    @media only screen and (max-width: 576px) {
+        top: -1rem;
+    }
 }
 
 .introduction-panel {
     padding: 1.5rem 2rem !important;
     padding-top: 2rem !important;
     position: relative;
+
+    // Large breakpoint
+    @media only screen and (max-width: 767px) {
+        padding: 1.5rem !important;
+    }
 }
 
 .viewport-panel {
     height: 70vh;
+
+    // Large breakpoint
+    @media only screen and (max-width: 767px) {
+        height: 50vh;
+    }
+
+    // Mobile
+    @media only screen and (max-width: 576px) {
+        height: 40vh;
+    }
 }
 
 .parallax {
@@ -81,18 +118,31 @@
     }
 }
 
+.navbar-right-container {
+    @media only screen and (min-width: 1700px) {
+        display: block !important;
+    }
+    
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 1.5rem;
+    max-width: 2096px;
+}
+
 .navbar-right {
     -webkit-animation: slide-in-right 0.7s 0.2s both;
     animation: slide-in-right 0.7s 0.2s both;
 
-    display: flex;
+    display: flex !important;
     flex-direction: column;
-    align-items: end;
-    position: fixed;
-    height: auto;
-    right: 1.5rem;
-    top: 50%;
-    padding: 0;
+    align-items: end !important;
+    margin-right: 0;
+    margin-left: auto;
+    width: min-content;
 
     &:not(:hover) {
         .nav-link.active {
