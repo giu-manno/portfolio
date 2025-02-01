@@ -51,6 +51,20 @@
     }
 }
 
+.figma-embed {
+    height: 70vh;
+
+    // Large breakpoint
+    @media only screen and (max-width: 767px) {
+        height: 50vh;
+    }
+
+    // Mobile
+    @media only screen and (max-width: 576px) {
+        height: 70vh;
+    }
+}
+
 .parallax {
     overflow: hidden;
     padding: 0;
