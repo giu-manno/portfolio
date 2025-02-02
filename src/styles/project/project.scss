@@ -37,6 +37,18 @@
     }
 }
 
+.disclaimer-alert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    background-color: #210124;
+    color: white;
+    border-radius: 2rem;
+    padding: 0.75rem 2rem;
+}
+
 .viewport-panel {
     height: 70vh;
 

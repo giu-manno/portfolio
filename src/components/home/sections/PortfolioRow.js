@@ -49,7 +49,6 @@ export default function PortfolioRow() {
 
                     <Row>
                         <PortfolioThumbnail 
-                            comingSoon
                             rectangleBig
                             backgroundImage={s4eThumbnail}
                             title="Suite 4 Energy"

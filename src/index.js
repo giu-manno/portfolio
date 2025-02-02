@@ -10,7 +10,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import ErrorPage from "pages/ErrorPage";
 import HomePage from "pages/HomePage";
-import ProjectPage from "pages/ProjectPage";
+import AdesProjectPage from "pages/AdesProjectPage";
+import S4EProjectPage from "pages/S4EProjectPage";
 
 const router = createBrowserRouter([
     {
@@ -22,7 +23,10 @@ const router = createBrowserRouter([
             element: <HomePage />
         }, {
             path: "labsec",
-            element: <ProjectPage />
+            element: <AdesProjectPage />
+        }, {
+            path: "norus",
+            element: <S4EProjectPage />
         }]
     },
 ]);

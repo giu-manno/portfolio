@@ -251,6 +251,10 @@ mark {
     aspect-ratio: 2 / 1 !important;
 }
 
+.horizontal-rectangle-thin {
+    aspect-ratio: 5 / 2 !important;
+}
+
 .horizontal-rectangle-dense {
     aspect-ratio: 4 / 1 !important;
 }
@@ -261,4 +265,8 @@ mark {
 
 .vertical-rectangle-dense {
     aspect-ratio: 1 / 4 !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
