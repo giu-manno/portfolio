@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { Row, Col, Container, Stack, Button, Collapse } from "react-bootstrap";
+import { useEffect } from "react";
+import { Row, Col, Container, Stack, Button } from "react-bootstrap";
 import { useInView } from "react-intersection-observer";
 import useDetectScroll from '@smakss/react-scroll-direction';
 
@@ -7,8 +7,6 @@ import AppleEmoji from "components/AppleEmoji";
 import ParallaxImage from "components/project/ParallaxImage";
 import { imageList } from "components/project/s4e/ImageList";
 import Footer from "components/Footer";
-
-import resultsVideo from "resources/img/s4e/results.mp4";
 
 export default function AdesPage({ setActiveSection, setImageIndex }) {
     const { ref: overviewRef, inView: overviewInView } = useInView({ rootMargin: "-20% 0px -30% 0px" });
@@ -37,8 +35,6 @@ export default function AdesPage({ setActiveSection, setImageIndex }) {
             else if (contactInView) setActiveSection(5);
         }
     }, [contactInView, resultsInView, midFidelityInView, wireframesInView, challengesInView, overviewInView, scrollDir, setActiveSection]);
-
-    const [disclaimerOpen, setDisclaimerOpen] = useState(false);
 
     return (
         <Container>
@@ -82,7 +78,7 @@ export default function AdesPage({ setActiveSection, setImageIndex }) {
                     {/* disclaimer alert */}
                     <Row className="d-none d-md-block">
                         <Col className="p-0">
-                            <div onClick={() => { setDisclaimerOpen(!disclaimerOpen); }} className="disclaimer-alert">
+                            <div className="disclaimer-alert">
                                 <div>
                                     <AppleEmoji className="me-4" name="warning" width="1.75rem" />
                                 </div>
