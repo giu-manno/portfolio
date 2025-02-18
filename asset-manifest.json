@@ -1,26 +1,28 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4be6753f.css",
-    "main.js": "/portfolio/static/js/main.abb45d49.js",
+    "main.js": "/portfolio/static/js/main.69e587c8.js",
     "static/js/633.6d22b5a2.chunk.js": "/portfolio/static/js/633.6d22b5a2.chunk.js",
     "static/media/results.mp4": "/portfolio/static/media/results.cf5cb485f02a1fffc7e9.mp4",
     "static/media/wireframes.jpg": "/portfolio/static/media/wireframes.cc770a9ca282ae2edbf5.jpg",
-    "static/media/overview.jpg": "/portfolio/static/media/overview.e80fd4e8d41260830929.jpg",
-    "static/media/introduction.jpg": "/portfolio/static/media/introduction.6179f031a2e423325445.jpg",
     "static/media/midFidelity.jpg": "/portfolio/static/media/midFidelity.dc65ba43c88a2cdf8a82.jpg",
     "static/media/wireframes2.jpg": "/portfolio/static/media/wireframes2.b08abe85e53e84d8941d.jpg",
     "static/media/tests4.jpg": "/portfolio/static/media/tests4.d328d5569611f064cf82.jpg",
     "static/media/wireframes1.jpg": "/portfolio/static/media/wireframes1.4cf5973b81e465a5007b.jpg",
     "static/media/tests5.jpg": "/portfolio/static/media/tests5.271562c6d0e75f479d93.jpg",
+    "static/media/overview.jpg": "/portfolio/static/media/overview.e80fd4e8d41260830929.jpg",
+    "static/media/introduction.jpg": "/portfolio/static/media/introduction.6179f031a2e423325445.jpg",
     "static/media/about.webp": "/portfolio/static/media/about.280cc6211b124c48619a.webp",
     "static/media/mapping.svg": "/portfolio/static/media/mapping.c12eea7fa8c8c63d7253d4c2c3c01847.svg",
     "static/media/profile.webp": "/portfolio/static/media/profile.0e7c1037f5ac7acd53dd.webp",
     "static/media/tests3.jpg": "/portfolio/static/media/tests3.727b90704597ea80d0f2.jpg",
+    "static/media/overview.webp": "/portfolio/static/media/overview.b618bc1b904ca76581c7.webp",
     "static/media/tests2.jpg": "/portfolio/static/media/tests2.272d97afe3fc47ec572d.jpg",
     "static/media/ufscLogo.svg": "/portfolio/static/media/ufscLogo.f01e3cfa0ca4eea1ff21053750ce5217.svg",
+    "static/media/introduction.webp": "/portfolio/static/media/introduction.fe825b835e6ea7e50bbf.webp",
     "static/media/s4eThumbnail.webp": "/portfolio/static/media/s4eThumbnail.a6845bd2fee5265d7fd0.webp",
     "static/media/about-mobile.webp": "/portfolio/static/media/about-mobile.ada74eb41d8a86d35edb.webp",
-    "static/media/adesThumbnail.webp": "/portfolio/static/media/adesThumbnail.8f8c0c6ee762847f2dd9.webp",
+    "static/media/adesThumbnail.webp": "/portfolio/static/media/adesThumbnail.f3ca694bbbd4064b735c.webp",
     "static/media/technovationLogo.svg": "/portfolio/static/media/technovationLogo.b344b00da96ab04b52abb7120a7d2f6e.svg",
     "static/media/Giulia-Manno_CV.pdf": "/portfolio/static/media/Giulia-Manno_CV.6986629547636441b5d5.pdf",
     "static/media/equipeDigitalLogo.svg": "/portfolio/static/media/equipeDigitalLogo.443b1cf3e00ef1eb770443c2669ee3e4.svg",
@@ -31,11 +33,11 @@
     "static/media/figmaLogo.svg": "/portfolio/static/media/figmaLogo.389c53241fe7ca62a96af25fb457f509.svg",
     "index.html": "/portfolio/index.html",
     "main.4be6753f.css.map": "/portfolio/static/css/main.4be6753f.css.map",
-    "main.abb45d49.js.map": "/portfolio/static/js/main.abb45d49.js.map",
+    "main.69e587c8.js.map": "/portfolio/static/js/main.69e587c8.js.map",
     "633.6d22b5a2.chunk.js.map": "/portfolio/static/js/633.6d22b5a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4be6753f.css",
-    "static/js/main.abb45d49.js"
+    "static/js/main.69e587c8.js"
   ]
 }
